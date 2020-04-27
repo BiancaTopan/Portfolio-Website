@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock, paper, scissors</title>
+    <link rel="stylesheet" href="game1.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Rock, paper, scissors</h1>
+    </header>
+    <div class="score">
+        <div id="client" class="player">client</div>
+        <div id="server" class="player">server</div>
+        <span id="user-score">0</span>:<span id="server-score">0</span>
+    </div>
+    <div class="max-score">The maxim score is: 5!</div>
+    <div class="container">
+        <div class="result">
+            <img id="img-s" src="scissors.jpg">
+            <img id="img-r" src="rock.png">
+            <img id="img-p" src="paper.png">
+            <p id="result"></p>
+        </div>
+
+        <div class="choices">
+            <div class="choice" id="r">
+                <img src="rock.png">
+            </div>
+            <div class="choice" id="s">
+                <img src="scissors.jpg">
+            </div>
+            <div class="choice" id="p">
+                <img src="paper.png">
+            </div>
+        </div>
+    </div>
+    <p class="move">Make your move.</p>
+    <footer>
+        <button id="reset" class="reset">Reset Game</button>
+    </footer>
+    <!-- <input id="tries" type="number">
+    <button id="send" type="submit">Send</button> -->
+
+    <script src="client/create-request.js"></script>
+    <script src="client/client.js"></script>
+
+
+</body>
+
+</html>
