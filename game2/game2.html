@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="game2.css">
+</head>
+
+<body>
+    <header>
+        <h1>Guess the number</h1>
+    </header>
+
+    <div class="interval">
+        <p>Give an interval of numbers:</p>
+        <div class="form">
+            <label>Min</label>
+            <input id="min" type="number">
+            <label>Max</label>
+            <input id="max" type="number">
+            <button id="start" type="submit">Start</button>
+        </div>
+        
+    </div>
+
+    <div class="tries">
+        <p id="tries">Number of tries:</p>
+        <p id="remaining-tries">Remaining tries:</p>
+    </div>
+
+    <div class="your-number">
+        <label>Your number:</label>
+        <input id="number" type="number">
+        <button id="play" type="submit">Play</button>
+    </div>
+    <!-- <div>
+        <p id="message">Message:</p>
+    </div> -->
+
+
+    <footer>
+        <p id="message"></p>
+        <button id="reset" class="reset">Reset Game</button>
+    </footer>
+
+    <script src="client/create-request.js"></script>
+    <script src="client/client.js"></script>
+
+</body>
+
+</html>
